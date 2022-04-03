@@ -10,6 +10,6 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const PORT = 8001;
 
-app.use(express.static('public'));
+app.use(express.static('docs'));
 
 app.listen(PORT);
