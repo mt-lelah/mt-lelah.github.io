@@ -1,0 +1,98 @@
+:root {
+    --nav-background-color: ;
+    --nav-text-color: #333;
+    --nav-primary-color: #559b29;
+    --nav-secondary-color: #907129;
+    --nav-primary-background-color: rgba(130, 224, 71, 0.20);
+    --nav-secondary-background-color: rgba(224, 173, 56, 0.20);
+    --top-nav-height: 60px;
+    --max-width: 1200px;
+    --gutter: 1rem;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #212121;
+    font-family: 'Cabin',
+    sans-serif;
+}
+
+.top-navigation {
+    background-color: #e8e7e4;
+    position: relative;
+    width: 100%;
+    z-index: 100;
+    overflow: hidden;
+}
+
+.top-navigation .container {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    grid-gap: var(--gutter);
+    gap: var(--gutter);
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: var(--max-width);
+    padding-left: var(--gutter);
+    padding-right: var(--gutter);
+}
+
+.top-navigation .top-navigation-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: var(--top-nav-height);
+}
+
+.top-navigation-main {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+ul.main-menu {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto 0 0;
+
+    /* max-width: 310px; */
+}
+
+ul.main-menu {
+    box-sizing: border-box;
+    grid-gap: 1rem;
+    list-style: none;
+    /* margin-top: 1rem; */
+    padding: 0;
+    width: 100%;
+}
+
+a.top-level-entry {
+    color: var(--nav-text-color);
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 0.5rem;
+
+    border-radius: 10px;
+}
+
+a.top-level-entry:hover {
+    color: var(--nav-primary-color);
+    background-color: var(--nav-primary-background-color);
+}
+
+a.top-level-entry:active {
+    color: var(--nav-secondary-color);
+    background-color: var(--nav-secondary-background-color);
+}
