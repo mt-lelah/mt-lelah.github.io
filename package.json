@@ -1,0 +1,19 @@
+{
+  "name": "mt-lelah",
+  "version": "1.0.0",
+  "description": "webserve for lelah.me",
+  "main": "index.js",
+  "scripts": {
+    "start": "esmo src/index.ts",
+    "test": "echo no test"
+  },
+  "author": "mia-cx",
+  "license": "MIT",
+  "devDependencies": {
+    "esmo": "^0.14.1"
+  },
+  "dependencies": {
+    "node-fetch": "^3.2.3",
+    "yaml": "^1.10.2"
+  }
+}
